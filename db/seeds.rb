@@ -12,6 +12,6 @@
     address: Faker::Address.full_address,
     description: Faker::Lorem.paragraph(sentence_count: 2),
     price_per_night: rand(650),
-    number_of_guests: rand(8)
+    number_of_guests: rand(1..8)
   )
 end
